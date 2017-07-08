@@ -6,19 +6,7 @@ This guide based on the one in [factory_girl_rails v4.8.0][source]. Thanks Thoug
 
 1. [Fork and clone the repo][fork].
 
-1. Install with the testing extras.
-
-   ```shell
-   pip install -e .[testing]
-   ```
-
-1. Make sure the tests pass.
-
-Remember, you need Python 2.7 and Python 3.6 installed.
-
-   ```shell
-   tox
-   ```
+1. [Setup for development](README.md#development).
 
 1. Create a feature branch:
 
