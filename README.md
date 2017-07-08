@@ -57,6 +57,8 @@ Like most folks, you will probably install to a [venv](https://docs.python.org/3
 
 # Running Tests
 
+The tests run against Python 2.7 and Python 3.6, so you'll need both installed. Check out [pyenv](https://github.com/pyenv/pyenv) for an easy way.
+
     tox
 
 # Contributing

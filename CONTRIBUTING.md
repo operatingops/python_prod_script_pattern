@@ -14,6 +14,8 @@ This guide based on the one in [factory_girl_rails v4.8.0][source]. Thanks Thoug
 
 1. Make sure the tests pass.
 
+Remember, you need Python 2.7 and Python 3.6 installed.
+
    ```shell
    tox
    ```
