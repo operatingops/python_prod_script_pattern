@@ -1,15 +1,16 @@
-# Submitting Issues
+# Contributing
 
-The issue tracker is for project changes. Bugfixes, improvements, etc. If you need help, check out
-[operatingops.org](operatingops.org) instead of submitting an issue.
+This guide based on the one in [factory_girl_rails v4.8.0][source]. Thanks Thoughtbot!
 
-1. Write everything you know. Think of all the questions a maintainer might ask and write in the answers.
+## Code
 
-1. Remember that this is free software! We have day jobs 👷. We might not respond right away.
+1. [Fork and clone the repo][fork].
 
-# Contributing Code
+1. Install with the testing extras.
 
-1. [Fork and clone the repo](https://help.github.com/articles/fork-a-repo/).
+   ```shell
+   pip install -e .[testing]
+   ```
 
 1. Make sure the tests pass.
 
@@ -37,12 +38,36 @@ The issue tracker is for project changes. Bugfixes, improvements, etc. If you ne
    git push origin my_feature
    ```
 
-1. [Create a Pull Request](https://help.github.com/articles/creating-a-pull-request/).
+1. [Create a Pull Request][pr].
+
+At this point you're waiting on us. Remember, you get the SLA you pay for and we don't get paid so we might not respond
+right away. We look for the right fix over a quick fix, and we may suggest some changes or improvements or alternatives.
 
 To increase the chance that your pull request gets accepted:
 
 * Write tests.
-* Follow [Simple Style](https://github.com/operatingops/simple_style/blob/v0.1.0/SIMPLE_STYLE.md).
-* Write [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
+* Follow [Simple Style][style].
+* Write [good commit messages][commits].
 * Organize your commits. "Fix typo" and "work in progress" commits are hard to follow. If you like to commit often,
-  check out git's [rebase](https://help.github.com/articles/about-git-rebase/). You can use it to clean up at the end.
+  check out git's [rebase][rebase]. You can use it to clean up at the end.
+
+## Issues
+
+The issue tracker is for project changes. Bugfixes, improvements, etc. If you need help, check out
+[operatingops.org][home] instead of submitting an issue.
+
+Write everything you know. Think of the questions we might ask and write the answers. Some great things to include:
+
+  1. What you expected to happen, and why.
+  2. What happened that was different from your expectations, and why, if you have any theories.
+  3. Whether or not you can contribute a fix.
+
+Like for pull requests, remember that we don't get paid so there's no SLA. We'll respond quickly if we can, though.
+
+[commits]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+[fork]: https://help.github.com/articles/fork-a-repo/
+[home]: https://operatingops.org
+[pr]: https://help.github.com/articles/creating-a-pull-request/
+[rebase]: https://help.github.com/articles/about-git-rebase/
+[source]: https://github.com/thoughtbot/factory_girl_rails/blob/v4.8.0/CONTRIBUTING.md
+[style]: https://github.com/operatingops/simple_style/blob/v0.1.0/SIMPLE_STYLE.md
