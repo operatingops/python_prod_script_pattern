@@ -11,6 +11,8 @@ Python can help! Out of box it can give you essential but often-skipped features
 * A `--simulate` option.
 * Command line sanity like a `--help` option and enforcement of required arguments.
 * Informative log output.
+  * Prefixes on your log events showing when you're in simulate mode.
+  * Log events from other libraries (e.g. boto3) filtered to the same log level set for your script.
 * An easy way to build and package.
 * An easy way to install a build without a git clone.
 * A command that you can just run like any other command. No weird shell setup or invocation required.
