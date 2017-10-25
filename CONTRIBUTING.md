@@ -1,5 +1,7 @@
 # Contributing
 
+This project follows the [Ubuntu Code of Conduct v2.0][conduct]. Thanks Ubuntu!
+
 This guide based on the one in [factory_girl_rails v4.8.0][source]. Thanks Thoughtbot!
 
 ## Code
@@ -54,6 +56,7 @@ Write everything you know. Think of the questions we might ask and write the ans
 
 Like for pull requests, remember that we don't get paid so there's no SLA. We'll respond quickly if we can, though.
 
+[conduct]: https://www.ubuntu.com/about/about-ubuntu/conduct
 [commits]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [fork]: https://help.github.com/articles/fork-a-repo/
 [home]: https://operatingops.org
