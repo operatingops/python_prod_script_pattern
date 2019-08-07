@@ -7,9 +7,16 @@ testing_requirements = [
 
 setup(
     name='python_production_script_recipe',
-    version='1.0.0',
+    version='1.0.1',
     author='Adam Burns',
     author_email='adam@operatingops.org',
+    license='MIT',
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3 :: Only"
+    ],
     description='Recipe of best practices for Python scripts in production.',
     packages=['sample_scripts'],
     entry_points={
