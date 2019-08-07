@@ -1,7 +1,4 @@
-try:
-    import mock  # Python 2.
-except ImportError:
-    from unittest import mock  # Python 3.
+from unittest import mock
 
 from sample_scripts import good
 
