@@ -74,13 +74,13 @@ Here's an approach I like:
 1. Distribute the wheel file from the `dist` folder:
 
    ```shell
-   dist/python_production_script_recipe-0.2.0-py3-none-any.whl
+   dist/python_production_script_recipe-1.0.0-py3-none-any.whl
    ```
 
 1. Install the wheel with pip.
 
    ```shell
-   pip install python_production_script_recipe-0.2.0-py3-none-any.whl
+   pip install python_production_script_recipe-1.0.0-py3-none-any.whl
    ```
 
 1. Run the script with its console script:
