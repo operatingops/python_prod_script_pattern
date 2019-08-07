@@ -36,10 +36,9 @@ pip-installability it's entirely reasonable to remove it:
 
 ## Development
 
-The tests run against Python 2.7 and Python 3.6, so you'll need both installed to run the tests. Check out
-[pyenv][pyenv] for an easy way.
+The tests run against several Python versions. Check out [pyenv][pyenv] for an easy way to install them all.
 
-As always, you should use a [venv][venv] (Python 3) or a [virtualenv][virtualenv] (Python 2).
+As always, you should use a [venv][venv].
 
 1. Use pip's editable mode and install the `testing` extras:
 
@@ -63,7 +62,7 @@ Check out the [contributing guide](CONTRIBUTING.md)!
 
 ## Production
 
-One great approach for Python 3 is this:
+Here's an approach I like:
 
 1. Build a [wheel][wheel].
 
@@ -75,13 +74,13 @@ One great approach for Python 3 is this:
 1. Distribute the wheel file from the `dist` folder:
 
    ```shell
-   dist/python_production_script_recipe-0.2.0-py3-none-any.whl
+   dist/python_production_script_recipe-1.0.0-py3-none-any.whl
    ```
 
 1. Install the wheel with pip.
 
    ```shell
-   pip install python_production_script_recipe-0.2.0-py3-none-any.whl
+   pip install python_production_script_recipe-1.0.0-py3-none-any.whl
    ```
 
 1. Run the script with its console script:
