@@ -1,8 +1,8 @@
 from setuptools import setup
 
 testing_requirements = [
-    'pytest-cov==2.5.1',
-    'tox==2.7.0',
+    'pytest-cov >=2.7, <2.8',
+    'tox >=3.13, <3.14',
 ]
 
 setup(
