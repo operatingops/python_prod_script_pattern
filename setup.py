@@ -26,5 +26,6 @@ setup(
     },
     extras_require={
         'testing': testing_requirements
-    }
+    },
+    install_requires=['python-json-logger >=0.1.11, <2.0.0']
 )
