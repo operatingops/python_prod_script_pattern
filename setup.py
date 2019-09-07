@@ -1,5 +1,9 @@
 from setuptools import setup
 
+requirements = [
+    'python-json-logger >=0.1.11, <2.0.0'
+]
+
 testing_requirements = [
     'pytest-cov >=2.7, <2.8',
     'tox >=3.13, <3.14',
@@ -27,5 +31,5 @@ setup(
     extras_require={
         'testing': testing_requirements
     },
-    install_requires=['python-json-logger >=0.1.11, <2.0.0']
+    install_requires=requirements
 )
