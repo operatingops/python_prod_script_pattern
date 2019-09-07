@@ -53,7 +53,6 @@ def act_on_offset(offset, simulate=False):
         try:
             time.sleep(5)
             done = True
-            logger.info('Action complete.')
         except Exception:
             # Catching all exceptions is an anti-pattern. This is a generic
             # example of how you could use log levels when errors happen.
@@ -62,6 +61,7 @@ def act_on_offset(offset, simulate=False):
             logger.error('Failure.')
     else:
         logger.debug('Simulate option set. Not acting.')
+        logger.info('Action complete.')
     return done
 
 
