@@ -59,8 +59,6 @@ def act_on_offset(offset, simulate=False):
             # Our pretend work won't trigger this, but a real script would do
             # something more interesting that might break.
             logger.error('Failure.')
-    else:
-        logger.info('Action complete.')
     return done
 
 
@@ -70,6 +68,7 @@ def run(offset, log_level='INFO', simulate=False):
     if offset_is_actionable(offset):
         logger.info('Acting.')
         act_on_offset(offset, simulate)
+        logger.info('Action complete.')
     else:
         logger.info('Nothing to do.')
 
