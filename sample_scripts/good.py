@@ -6,41 +6,24 @@ import argparse
 import logging
 import time
 
-
-class SimulatorFilter(logging.Filter):
-    def __init__(self, simulate):
-        self.simulate = simulate
-        super(SimulatorFilter, self).__init__()
-
-    def filter(self, record):
-        record.prefix = 'SIMULATE ' if self.simulate else ''
-        return True
+from pythonjsonlogger import jsonlogger
 
 
 def setup_logging(log_level, simulate):
-
-    # Setup a root logger with a format that matches what we plan to use.
-    # This means LogRecords from other libraries will still be emitted and will
-    # look similar to ours.
-    root_format_string = '%(asctime)s | %(levelname)s | %(name)s | %(message)s'
-    logging.basicConfig(format=root_format_string, level=log_level)
-
-    # Setup our logger with a filter that adds a prefix whenever simulate=True.
-    # Don't propagate because our format string expects a prefix not set on
-    # handlers of loggers created by other libraries.
-    format_string = '%(asctime)s | %(levelname)s | %(name)s | %(prefix)s%(message)s' # noqa
     logger = logging.getLogger(__name__)
-    handler = logging.StreamHandler()
-    formatter = logging.Formatter(fmt=format_string)
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
     logger.setLevel(log_level)
-    logger = logging.getLogger(__name__)
-    logger.propagate = False
-    has_simulator_filter = [i for i in logger.filters
-                            if isinstance(i, SimulatorFilter)]
-    if not has_simulator_filter:
-        logger.addFilter(SimulatorFilter(simulate))
+    logHandler = logging.StreamHandler()
+    if simulate:
+        formatter = jsonlogger.JsonFormatter(
+            fmt='%(asctime)s | %(levelname)s | %(name)s | %(message)s',
+            prefix='SIMULATE'
+        )
+    else:
+        formatter = jsonlogger.JsonFormatter(
+            fmt='%(asctime)s | %(levelname)s | %(name)s | %(message)s'
+        )
+    logHandler.setFormatter(formatter)
+    logger.addHandler(logHandler)
 
 
 def get_arguments():  # pragma: no cover
