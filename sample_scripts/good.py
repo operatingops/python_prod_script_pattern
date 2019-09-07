@@ -60,7 +60,6 @@ def act_on_offset(offset, simulate=False):
             # something more interesting that might break.
             logger.error('Failure.')
     else:
-        logger.debug('Simulate option set. Not acting.')
         logger.info('Action complete.')
     return done
 
