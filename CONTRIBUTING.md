@@ -6,9 +6,11 @@ This guide based on the one in [factory_girl_rails v4.8.0][source]. Thanks Thoug
 
 ## Code
 
-1. [Fork and clone the repo][fork].
+The tests run against several Python versions. Check out [pyenv][pyenv] for an easy way to install them all.
 
-1. [Setup for development](README.md#development).
+As always, you should use a [venv][venv].
+
+1. [Fork and clone the repo][fork].
 
 1. Create a feature branch:
 
@@ -16,12 +18,24 @@ This guide based on the one in [factory_girl_rails v4.8.0][source]. Thanks Thoug
    git checkout -b my_feature
    ```
 
+1. Use pip's editable mode and install the `testing` extras:
+
+   ```shell
+   pip install -e .[testing]
+   ```
+
 1. Make your change. Add tests for your change.
 
-1. Make sure the tests pass.
+1. Run the tests with tox:
 
    ```shell
    tox
+   ```
+
+1. Run the script with its console script (see `setup.py`):
+
+   ```shell
+   sample-script-good --help
    ```
 
 1. Push to your fork.
@@ -64,3 +78,4 @@ Like for pull requests, remember that we don't get paid so there's no SLA. We'll
 [rebase]: https://help.github.com/articles/about-git-rebase/
 [source]: https://github.com/thoughtbot/factory_girl_rails/blob/v4.8.0/CONTRIBUTING.md
 [style]: https://github.com/operatingops/simple_style/blob/v0.1.1/SIMPLE_STYLE.md
+[venv]: https://docs.python.org/3/library/venv.html
