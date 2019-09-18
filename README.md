@@ -1,11 +1,11 @@
 # About
 
-In production, even simple scripts get complex. That divide by zero case you missed will overload a queue somewhere. Someone will miss that one argument you forgot to make required and everything will break when a null value gets pushed. You'll forget to timestamp some of your output lines and then, when things go wrong, you won't be able to correlate those lines to real events and you'll be stuck guessing.
+In production, even simple scripts are hard. If you miss a divide by zero case, everything will break when that case happens. Someone won't see that one argument you forgot to make required on the CLI and everything will break when a null value gets pushed. You'll forget to timestamp some of your output lines and then, when something goes wrong, you won't be able to correlate logs to real events and you'll be stuck guessing.
 
-Python can help! It's easy to write Python scripts that have the features to prevent problems like those:
+Python can help! It's easy to write Python scripts that have the features to support the rigor of production:
 
 * Automated tests for multiple platforms.
-* A command that you can just run like any other command. No weird shell setup or invocation required.
+* A command that runs on the shell like any other command. No specific working directory or special invocation required.
 * Command line sanity like a `--help` option and enforcement of required arguments.
 * A `--simulate` option.
 * Informative log output.
@@ -13,9 +13,9 @@ Python can help! It's easy to write Python scripts that have the features to pre
   * Log events from other libraries (e.g. boto3) filtered to the same log level set for your script.
   * Output structured in JSON objects. JSON is cleaner to ingest than formatted strings and modern logging tools all support it (including AWS CloudWatch Logs).
 * An easy way to build and package.
-* An easy way to install a build without a git clone.
+* An easy way to install without a git clone.
 
-This project provides a demo of how to write production-ready scripts with these features. It also includes an example of a script that *isn't* ready for prod.
+This project provides a demo of how to write production-ready scripts with these features. It also includes an example of a script that *isn't* ready, so you can compare them.
 
 I've found that [tracking code coverage can hurt projects][coverage] and that [Python's style guide (PEP8) can be wasteful][pep8], especially for scripts (vs applications). However, this demo is written so you can copy/paste and tweak it. Many projects enforce coverage and PEP8, so this does the same to minimize the changes you'll need to implement.
 
