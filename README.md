@@ -21,15 +21,19 @@ I've found that [tracking code coverage can hurt projects][coverage] and that [P
 
 # User Guide
 
-This is pip-installable so any of the usual Python build and install patterns should work. If you don't want pip-installability it's entirely reasonable to remove it:
-
-* Replace `setup.py` with a `requirements.txt`.
-* Update the tox config to [install from `requirements.txt`][tox requirements].
-* Replace the `entry_point()` method with an `if __name__ == '__main__'` condition.
+This is pip-installable so any of the usual Python build and install patterns should work.
 
 ## Contributing
 
 Check out the [contributing guide](CONTRIBUTING.md).
+
+## Pip-Installability
+
+This project is pip-installable because that's the way I write all my Python projects. I find it's a clean standard to follow. However, it would be entirely reasonable to use a `requirements.txt` file and a flat module instead:
+
+* Replace `setup.py` with a `requirements.txt`.
+* Update the tox config to [install from `requirements.txt`][tox requirements].
+* Replace the `entry_point()` method with an `if __name__ == '__main__'` condition in the script module.
 
 ## Packaging, Distributing, and Installing
 
