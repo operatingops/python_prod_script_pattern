@@ -81,7 +81,7 @@ For a level up beyond just what Python can give you, check out these:
 
 [coverage]: https://operatingops.org/2016/11/25/why-i-dont-track-test-coverage/
 [fpm]: https://github.com/jordansissel/fpm
-[pep8]: https://github.com/operatingops/simple_style/blob/v0.1.0/SIMPLE_STYLE.md
+[pep8]: https://github.com/operatingops/simple_style/blob/v0.2.0/SIMPLE_STYLE.md
 [pex]: https://github.com/pantsbuild/pex
 [pyenv]: https://github.com/pyenv/pyenv
 [pypi]: https://pypi.python.org/pypi
