@@ -13,6 +13,7 @@ Python can help! Out of box it can give you essential but often-skipped features
 * Informative log output.
   * Prefixes on your log events showing when you're in simulate mode.
   * Log events from other libraries (e.g. boto3) filtered to the same log level set for your script.
+  * Output structured in JSON objects. JSON is cleaner to ingest than formatted strings and modern logging tools all support it (including AWS CloudWatch Logs).
 * An easy way to build and package.
 * An easy way to install a build without a git clone.
 * A command that you can just run like any other command. No weird shell setup or invocation required.
