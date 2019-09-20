@@ -12,7 +12,7 @@ from pythonjsonlogger import jsonlogger
 def setup_logging(log_level, simulate):
     logger = logging.getLogger(__name__)
     logger.setLevel(log_level)
-    logHandler = logging.StreamHandler()
+    json_handler = logging.StreamHandler()
     if simulate:
         formatter = jsonlogger.JsonFormatter(
             fmt='%(asctime)s %(levelname)s %(name)s %(message)s',
@@ -22,8 +22,8 @@ def setup_logging(log_level, simulate):
         formatter = jsonlogger.JsonFormatter(
             fmt='%(asctime)s %(levelname)s %(name)s %(message)s'
         )
-    logHandler.setFormatter(formatter)
-    logger.addHandler(logHandler)
+    json_handler.setFormatter(formatter)
+    logger.addHandler(json_handler)
 
 
 def get_arguments():  # pragma: no cover
