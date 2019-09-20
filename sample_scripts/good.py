@@ -15,12 +15,12 @@ def setup_logging(log_level, simulate):
     logHandler = logging.StreamHandler()
     if simulate:
         formatter = jsonlogger.JsonFormatter(
-            fmt='%(asctime)s | %(levelname)s | %(name)s | %(message)s',
+            fmt='%(asctime)s %(levelname)s %(name)s %(message)s',
             prefix='SIMULATE'
         )
     else:
         formatter = jsonlogger.JsonFormatter(
-            fmt='%(asctime)s | %(levelname)s | %(name)s | %(message)s'
+            fmt='%(asctime)s %(levelname)s %(name)s %(message)s'
         )
     logHandler.setFormatter(formatter)
     logger.addHandler(logHandler)
