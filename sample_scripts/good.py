@@ -58,7 +58,7 @@ def act_on_offset(offset, simulate=False):
             # example of how you could use log levels when errors happen.
             # Our pretend work won't trigger this, but a real script would do
             # something more interesting that might break.
-            logger.error('Failure.')
+            logger.info('There was an error, but we handled it.')
     return done
 
 
