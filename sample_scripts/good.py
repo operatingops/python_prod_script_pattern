@@ -9,8 +9,10 @@ import time
 from pythonjsonlogger import jsonlogger
 
 
+logger = logging.getLogger(__name__)
+
+
 def setup_logging(log_level, simulate):
-    logger = logging.getLogger(__name__)
     logger.setLevel(log_level)
     json_handler = logging.StreamHandler()
     if simulate:
@@ -47,7 +49,6 @@ def offset_is_actionable(offset):
 
 
 def act_on_offset(offset, simulate=False):
-    logger = logging.getLogger(__name__)
     done = False
     if not simulate:
         try:
@@ -64,7 +65,6 @@ def act_on_offset(offset, simulate=False):
 
 def run(offset, log_level='INFO', simulate=False):
     setup_logging(log_level, simulate)
-    logger = logging.getLogger(__name__)
     if offset_is_actionable(offset):
         logger.info('Acting.')
         act_on_offset(offset, simulate)
