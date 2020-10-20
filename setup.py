@@ -11,7 +11,7 @@ testing_requirements = [
 
 setup(
     name='python_production_script_recipe',
-    version='1.0.1',
+    version='1.1.0',
     author='Adam Burns',
     author_email='adam@operatingops.org',
     license='MIT',
@@ -19,6 +19,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3 :: Only"
     ],
     description='Recipe of best practices for Python scripts in production.',
