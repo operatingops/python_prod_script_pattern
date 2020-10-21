@@ -11,7 +11,7 @@ testing_requirements = [
 
 setup(
     name='python_production_script_recipe',
-    version='1.1.0',
+    version='1.1.1',
     author='Adam Burns',
     author_email='adam@operatingops.org',
     license='MIT',
