@@ -19,7 +19,7 @@ This project provides a demo of how to write production-ready scripts with these
 
 I've found that [tracking code coverage can hurt projects][coverage] and that [Python's style guide (PEP8) can be wasteful][pep8], especially for scripts (vs applications). However, this demo is written so you can copy/paste and tweak it. Many projects enforce coverage and PEP8, so this does the same to minimize the changes you'll need to implement.
 
-Need help with this? I'm also [available to consult][consult].
+Need help with this? We're [available to consult][consult].
 
 # User Guide
 
@@ -81,7 +81,7 @@ For a level up beyond just what Python can give you, check out these:
   (e.g. `lib-obscure-dev`).
 
 
-[consult]: https://operatingops.org/hire-adam/
+[consult]: https://operatingops.com/hire
 [coverage]: https://operatingops.org/2016/11/25/why-i-dont-track-test-coverage/
 [fpm]: https://github.com/jordansissel/fpm
 [pep8]: https://github.com/operatingops/simple_style/blob/v0.2.0/SIMPLE_STYLE.md
